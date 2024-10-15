@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jockey+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jockey+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alatsi&family=Irish+Grover&family=Jockey+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Alatsi&family=Irish+Grover&family=Jockey+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hedder-image {
+            background-image: url(/images/Header.png);
+        }
+
+        .hedder-cont {
+            display: flex;
+        }
+
+        .hedder-image .sub1 {
+            margin-left: 40px;
+            margin-bottom: 50px;
+            padding-top: 240px;
+            font-family: Nunito Sans;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+        }
+
+        .navbars .navs {
+            display: flex;
+            margin-left: 230px;
+        }
+
+        .navbars .navs .list-i {
+            margin-left: 35px;
+            padding: 5px 10px;
+            margin-top: 40px;
+            font-size: 20px;
+            list-style: none;
+            font-family: Poppins;
+        }
+
+        .navbars .navs .list-i :hover {
+            background-color: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbars .navs .list-i:hover {
+            /* margin: 19px; */
+            color: white;
+            background-color: aqua;
+            /* opacity: 0.8; */
+            border-radius: 20px;
+        }
+
+        .regester {
+            /* background-color: aquamarine; */
+            height: 90px;
+            padding-right: 20px;
+        }
+
+        .navbars .navs li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .regester ul {
+            display: flex;
+            margin-top: 40px;
+            margin-left: 100px;
+            padding-left: 0px;
+        }
+
+        .regester ul li {
+            list-style: none;
+            margin-left: 20px;
+            font-size: larger;
+            margin-top: -10px;
+            /* border: 2px red solid; */
+            padding: 8px 25px;
+            border-radius: 30px;
+            background-color: aliceblue;
+            font-family: Poppins;
+            /* box-shadow: 2px 2px 3px 3px rgb(228, 228, 228); */
+        }
+
+        .regester ul li:hover {
+            background-color: lightgray;
+        }
+
+        .regester ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .images-last {
+            margin-top: 50px;
+            margin-left: 280px;
+            display: flex;
+        }
+
+        .images-last img {
+            margin: 20px;
+        }
+
+        .images-last .float h2 {
+            color: rgb(255, 255, 255);
+            margin-top: -150px;
+            font-family: poppins;
+        }
+
+        /* .fotter {
+            margin-top: 150px;
+            height: 100px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border-top: 2px black solid;
+        } */
+
+        .fotter h2 {
+            font-family: poppins;
+        }
+
+        .social {
+            margin-top: -100px;
+            display: flex;
+            margin-left: 480px;
+            margin-top: 30px;
+        }
+
+        .social img {
+            height: 50px;
+            margin: 20px;
+        }
+
+        .mentors .mentor-id {
+            height: 230px;
+            width: 700px;
+            margin: 50px;
+            background-color: aliceblue;
+            margin-left: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 1px 1px 20px 14px rgb(215, 213, 213);
+        }
+
+        .mentors .mentor-id:hover {
+            transform: scale(1.02);
+        }
+
+        .mentors .mentor-id .mentor-img img {
+            height: 230px;
+            width: 170px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            /* margin: 15px; */
+        }
+
+        .mentor-channel {
+            margin-top: -170px;
+            margin-left: 300px;
+        }
+
+        .mentor-name {
+            margin-left: 20px;
+        }
+
+        .status {
+            margin-top: -228px;
+            margin-left: 600px;
+            height: 230px;
+            width: 100px;
+            background-image: url(/images/Header.png);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .center {
+            color: white;
+            padding-top: 70px;
+        }
+
+        .rating {
+            margin-left: 200px;
+        }
+
+        .rate div {
+            margin-top: -30px;
+            margin-left: 270px;
+        }
+
+        .rate img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .role {
+            margin-left: 200px;
+        }
+
+        .all p {
+            /* margin-top: px; */
+            margin-left: 200px;
+            width: 400px;
+        }
+
+        .mentors .mentor-id a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .mentors .mentor-id a:hover {
+            text-decoration: none;
+        }
+    </style>
+    <title>courses</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="vcontainer">
+        <div class="hedder">
+            <div class="hedder-image">
+                <div class="hedder-cont">
+                    <div class="logo">
+                        <img src="/images/Group 112.png" alt="">
+                    </div>
+                    <div class="navbars">
+                        <ul class="navs">
+                            <li class="list-i"><a href="homepage2.html">Home</a></li>
+                            <li class="list-i"><a href="">About</a></li>
+                            <li class="list-i"><a href="">Services</a></li>
+                            <li class="list-i"><a href="">courses</a></li>
+                            <li class="list-i"><a href="">Other</a></li>
+                        </ul>
+                    </div>
+                    <div class="regester">
+                        <ul class="login">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Signup</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mentors">
+            <div class="mentor-container">
+                <div class="mentor-id">
+                    <a href="">
+                        <div style="display: flex;">
+                            <div class="mentor-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AVikaxxto9nUz6-HqiGUjc0bLgpTP2sMbQ&s"
+                                    alt="">
+                            </div>
+                            <h2 class="mentor-name">
+                                Haris Ali Khan
+                            </h2>
+                        </div>
+                        <div class="all">
+                            <h3 class="mentor-channel">
+                                -Code With Harry
+                            </h3>
+                            <div class="rate">
+                                <h4 class="rating">Ratings</h4>
+                                <div>
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <h4 class="role">Role: Coding Instructor</h4>
+                            <p> Haris Ali Khan. He is
+                                a computer programmer and coding instructor.The name of the person behind the
+                                CodeWithHarry YouTube channel is Haris Ali Khan.</p>
+                        </div>
+
+                        <div class="status">
+                            <div class="center">
+                                <center>
+                                    <p>ADVANCE</p>
+                                </center>
+                                <center>
+                                    <P>AND</P>
+                                </center>
+                                <center>
+                                    <P>BIGEINER</P>
+                                </center>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="mentor-id">
+                    <a href="">
+                        <div style="display: flex;">
+                            <div class="mentor-img">
+                                <img src="https://starsunfolded.com/wp-content/uploads/2022/04/Jayanti-Khatri-Lamba.jpg"
+                                    alt="">
+                            </div>
+                            <h2 class="mentor-name">
+                                Jayanti Khatri
+                            </h2>
+                        </div>
+                        <div class="all">
+                            <h3 class="mentor-channel">
+                                -Jenny's Lectures CS IT
+                            </h3>
+                            <div class="rate">
+                                <h4 class="rating">Ratings</h4>
+                                <div>
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <h4 class="role">Role: Coding Instructor</h4>
+                            <p>Jenny's Lectures is a YouTube channel that offers tutorials for programmers, engineers,
+                                software developers, coders, graduates, and undergraduates.</p>
+                        </div>
+
+                        <div class="status">
+                            <div class="center">
+                                <center>
+                                    <p>ADVANCE</p>
+                                </center>
+                                <center>
+                                    <P>AND</P>
+                                </center>
+                                <center>
+                                    <P>BIGEINER</P>
+                                </center>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="mentor-id">
+                    <a href="">
+                        <div style="display: flex;">
+                            <div class="mentor-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwuSkedBIIdQ4c-YKx-i-0GDQnVlOlGexzg&s"
+                                    alt="">
+                            </div>
+                            <h2 class="mentor-name">
+                                Shradha
+                            </h2>
+                        </div>
+                        <div class="all">
+                            <h3 class="mentor-channel">
+                                -Apna College
+                            </h3>
+                            <div class="rate">
+                                <h4 class="rating">Ratings</h4>
+                                <div>
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <h4 class="role">Role: Professional Coder</h4>
+                            <p> Shradha Khapra is the co-founder of Apna College, a YouTube channel that teaches coding
+                                and programming: Shradha Khapra is the co-founder of Apna College </p>
+                        </div>
+
+                        <div class="status">
+                            <div class="center">
+                                <center style="padding-top: 40px;">
+                                    <p>ADVANCE</p>
+                                </center>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="mentor-id">
+                    <a href="">
+                        <div style="display: flex;">
+                            <div class="mentor-img">
+                                <img src="https://i.ytimg.com/vi/8Dh3FbjWF1o/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLAlcz3vOM7pTnL_bSRZlWrvUqjTzQ"
+                                    alt="">
+                            </div>
+                            <h2 class="mentor-name">
+                                Rishabh Mishra
+                            </h2>
+                        </div>
+                        <div class="all">
+                            <h3 class="mentor-channel">
+                                -Rishabh Mishra
+                            </h3>
+                            <div class="rate">
+                                <h4 class="rating">Ratings</h4>
+                                <div>
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <h4 class="role">Role: Coding Instructor</h4>
+                            <p> Rishabh Mishra is a YouTube channel that offers tutorials for programmers, engineers,
+                                software developers, coders, graduates, and undergraduates.</p>
+                        </div>
+
+                        <div class="status">
+                            <div class="center" style="padding-top: 100px;">
+                                <center>
+                                    <P>BIGEINER</P>
+                                </center>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="mentor-id">
+                    <a href="">
+                        <div style="display: flex;">
+                            <div class="mentor-img">
+                                <img src="https://yt3.ggpht.com/EVZXPar4eE6LIdl7v7PrWbmb2EBy7FyMMt_3gYT-e9g__FrfQxG4WY2lLJsckYZ0VMEyZ_OJRQ6s=s1024-nd-v1"
+                                    alt="">
+                            </div>
+                            <h2 class="mentor-name">
+                                Navin Reddy
+                            </h2>
+                        </div>
+                        <div class="all">
+                            <h3 class="mentor-channel">
+                                -Thelsuko
+                            </h3>
+                            <div class="rate">
+                                <h4 class="rating">Ratings</h4>
+                                <div>
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                    <img src="https://cdn.vectorstock.com/i/500p/84/75/gold-star-vector-32648475.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <h4 class="role">Role: Coding Instructor</h4>
+                            <p> Navin Reddy is Trainer and Educator. He is also a Founder & CEO at Telusko. He has
+                                taught Millions on Different technologies.</p>
+                        </div>
+
+                        <div class="status">
+                            <div class="center">
+                                <center>
+                                    <p>ADVANCE</p>
+                                </center>
+                                <center>
+                                    <P>AND</P>
+                                </center>
+                                <center>
+                                    <P>BIGEINER</P>
+                                </center>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="fotter">
+            <center>
+                <h2>FOLLOW US ON</h2>
+            </center>
+            <div class="social">
+                <img src="/images/whatsapp.png" alt="">
+                <img src="/images/youtube.png" alt="">
+                <img src="/images/instagram.png" alt="">
+                <img src="/images/telegram.png" alt="">
+                <img src="/images/facebook.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
