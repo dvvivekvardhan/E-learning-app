@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Color Change</title>
+    <style>
+        /* Default anchor tag style */
+        .list-item {
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* Change the color after the link is clicked */
+        .clicked {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anchor Tag Color Change on Click</h1>
+    <ul>
+        <li><a href="https://example.com" class="list-item" target="_blank">Example Link 1</a></li>
+        <li><a href="https://openai.com" class="list-item" target="_blank">OpenAI Link</a></li>
+        <li><a href="https://google.com" class="list-item" target="_blank">Google Link</a></li>
+    </ul>
+    <script>
+        // Select all anchor tags with the class "list-item"
+        const links = document.querySelectorAll('.list-item');
+
+        // Add an event listener to each link to track clicks
+        links.forEach(link => {
+            link.addEventListener('click', function (event) {
+                // Prevent default link behavior
+                event.preventDefault();
+
+                // Add the "clicked" class to the clicked link
+                this.classList.add('clicked');
+
+                // Allow the default action of opening the link in a new tab
+                window.open(this.href, '_blank');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
